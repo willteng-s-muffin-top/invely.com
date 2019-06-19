@@ -13,10 +13,18 @@ $global-margin-left: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Source Serif Pro', serif;
+    // font-family: 'Source Serif Pro', serif;
+    font-family: 'Noto Serif KR', serif;
+}
+
+p {
+    font-size: .85rem;
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    margin: 0px;
+    // font-family: 'Source Sans Pro', sans-serif;
+    // font-family: 'Noto Serif KR', serif;
+    font-family: 'Noto Sans KR', sans-serif;
+
+    margin: 0px $global-margin-left 0px 0px;
 }
