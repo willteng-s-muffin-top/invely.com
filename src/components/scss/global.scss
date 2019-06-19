@@ -1,5 +1,22 @@
 // Global
 
+$black: black;
+
+$global-margin-top: 20px;
+$global-margin-left: 20px;
+
+* {
+    // font-family: 'Noto Sans KR', sans-serif;
+    // font-family: 'Source Serif Pro', serif;
+    // font-family: 'Source Sans Pro', sans-serif;
+    // font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Serif Pro', serif;
+}
+
 body {
+    font-family: 'Source Sans Pro', sans-serif;
     margin: 0px;
 }

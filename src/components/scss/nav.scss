@@ -1,3 +1,32 @@
-.navbar {
+nav.navbar {
+    display: flex;
+    // flex-direction: column;
+    // align-items: flex-end;
+    margin-top: $global-margin-top;
+    margin-left: $global-margin-left;
+
+    font-family: 'Lato', sans-serif;
+
+    a.logo {
+        text-decoration: none;
+        color: $black;
+    }
     
+
+    .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        // align-items: flex-end;
+        margin-left: 50px;
+        text-transform: uppercase;
+
+        letter-spacing: 1px;
+        line-height: 22px;
+        font-size: 12px;
+
+        a.navbar-item {
+            text-decoration: none;
+            color: $black;
+        }
+    }
 }
