@@ -47,6 +47,9 @@ const Navbar = class extends React.Component {
           모모의 블로그
         </Link>
         <div className="navbar-menu">
+          <Link className="navbar-item" to="/portfolio">
+            Portfolio
+          </Link>
           <Link className="navbar-item" to="/blog">
             Blog
           </Link>
