@@ -57,10 +57,13 @@
                 opacity: 1;
             }
             
-        
             &::after {
                 -webkit-transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
                 transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+            }
+
+            .description {
+                padding: 0px 20px;
             }
             
         }

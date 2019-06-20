@@ -35,7 +35,7 @@ class PortfolioRoll extends React.Component {
                   <div className="post-meta">
                     <div className="hover-layer"></div>
                     <h1 className="title">{post.frontmatter.title}</h1>
-                    <p className="description">{post.frontmatter.date}</p>
+                    <p className="description">{post.frontmatter.description}</p>
                   </div>
                   
                 </header>
@@ -74,6 +74,7 @@ export default () => (
                 title
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
+                description
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 1920, quality: 100) {
