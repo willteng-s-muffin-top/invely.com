@@ -1,21 +1,13 @@
 ---
 templateKey: index-page
 title: Great coffee with a conscience
-image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+image: /img/1000000002_detail_037.jpg
+heading: 모모의 포트폴리오 블로그
+subheading: 모모의 생각과 흔적을 남기는 곳
 mainpitch:
-  title: Why Kaldi
-  description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  title: 모모의 블로그
+  description: 별 남은 가을 이름을 봅니다. 이런 하나에 소학교 별빛이 된 무엇인지 못 덮어 헤는 계십니다.
+description: 모모의 블로그 입니다.
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -68,3 +60,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+
