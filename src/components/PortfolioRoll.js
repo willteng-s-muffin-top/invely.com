@@ -9,10 +9,10 @@ class PortfolioRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="columns is-multiline">
+      <div className="portfolio-container">
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="is-parent column is-6" key={post.id}>
+            <Link className="portfolio-item" key={post.id} to={post.fields.slug}>
               <article
                 className={`portfolio-list-item tile is-child box notification ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
@@ -31,29 +31,16 @@ class PortfolioRoll extends React.Component {
                       />
                     </div>
                   ) : null}
-                  <p className="post-meta">
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
-                    </span>
-                  </p>
+                  
+                  <div className="post-meta">
+                    <div className="hover-layer"></div>
+                    <h1 className="title">{post.frontmatter.title}</h1>
+                    <p className="description">{post.frontmatter.date}</p>
+                  </div>
+                  
                 </header>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
               </article>
-            </div>
+            </Link>
           ))}
       </div>
     )
@@ -89,7 +76,7 @@ export default () => (
                 date(formatString: "MMMM DD, YYYY")
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
+                    fluid(maxWidth: 1920, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }
