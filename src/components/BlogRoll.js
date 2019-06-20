@@ -33,6 +33,7 @@ class BlogRoll extends React.Component {
                   ) : null}
                   <div className="post-meta">
                     <h1 className="title">{post.frontmatter.title}</h1>
+                    <p className="description">{post.frontmatter.description}</p>
                     <p className="date">{post.frontmatter.date}</p>
                   </div>
                 </header>
@@ -71,6 +72,7 @@ export default () => (
                 title
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
+                description
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 1920, quality: 100) {

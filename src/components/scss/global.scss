@@ -3,12 +3,14 @@
 $black: black;
 $white: white;
 $grey-01: #282828;
+$grey-02: #424242;
+$grey-03: #848484;
 
 $light-grey-01: #f4f4f4;
 $light-grey-02: #cccccc;
 
-$global-margin-top: 20px;
-$global-margin-left: 20px;
+$global-margin-top: 40px;
+$global-margin-left: 40px;
 
 * {
     // font-family: 'Noto Sans KR', sans-serif;
@@ -24,6 +26,16 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     font-size: .85rem;
+}
+
+a {
+    // font-family: 'Noto Serif KR', serif;
+    -webkit-transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    &:hover {
+        color: $grey-03;
+    }
 }
 
 body {

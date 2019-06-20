@@ -33,6 +33,10 @@
         .post-meta {
             margin-left: 25px;
             text-decoration: none;
+
+            .description {
+                max-width: 600px;
+            }
         }
     }
 }
