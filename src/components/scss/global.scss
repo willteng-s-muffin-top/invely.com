@@ -1,6 +1,8 @@
 // Global
 
 $black: black;
+$grey-01: #282828;
+$light-grey-01: #f4f4f4;
 
 $global-margin-top: 20px;
 $global-margin-left: 20px;
@@ -27,4 +29,8 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
 
     margin: 0px $global-margin-left 0px 0px;
+}
+
+.section {
+    margin-top: $global-margin-top;
 }

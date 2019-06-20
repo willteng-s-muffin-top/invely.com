@@ -1,17 +1,15 @@
 div.layout-container {
     display: grid;
+    grid-template-columns: 300px 1fr;
     grid-template-areas:
         "nav main"
         "footer footer";
 
         nav {
             grid-area: nav;
-            
-            width: 300px;
-            // background-color: yellow;
         }
 
         footer {
-            grid-area: footer;
+            grid-area: footer; 
         }
 }
