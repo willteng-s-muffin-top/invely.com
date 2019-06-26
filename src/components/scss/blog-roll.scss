@@ -1,13 +1,16 @@
+// Phone
 .blog-container {
     display: flex;
     flex-direction: column;
 
     .blog-item {
-        margin: 5px 0px;
+        margin: 5px $global-mobile-roll-margin-side;
         padding: 10px;
         text-decoration: none;
         color: $grey-01;
         border-radius: 5px;
+
+        width: inherit;
 
         -webkit-transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
         transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -24,18 +27,65 @@
 
     header {
         display: flex;
+        flex-direction: column;
         
 
         .featured-thumbnail {
-            min-width: 300px;
+            width: 100%;
         }
 
         .post-meta {
-            margin-left: 25px;
+            margin-left: 10px;
             text-decoration: none;
 
             .description {
-                max-width: 600px;
+                // max-width: 600px;
+            }
+        }
+    }
+}
+
+/* Laptop, Desktop ----------- */
+@media (min-width: 1024px) {
+    .blog-container {
+        display: flex;
+        flex-direction: column;
+    
+        .blog-item {
+            margin: 5px 0px;
+            padding: 10px;
+            text-decoration: none;
+            color: $grey-01;
+            border-radius: 5px;
+    
+            -webkit-transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        
+            &:hover{
+                background-color: $light-grey-01;
+            }
+        
+            &::after {
+                -webkit-transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+                transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+            }
+        }
+    
+        header {
+            display: flex;
+            flex-direction: row;
+    
+            .featured-thumbnail {
+                width: 300px;
+            }
+    
+            .post-meta {
+                margin-left: 25px;
+                text-decoration: none;
+    
+                .description {
+                    max-width: 600px;
+                }
             }
         }
     }

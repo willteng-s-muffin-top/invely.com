@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 // TODO: Need to change logo
-import logo from '../img/logo.svg'; 
+// import logo from '../img/logo.svg'; 
 
 
 const Navbar = class extends React.Component {

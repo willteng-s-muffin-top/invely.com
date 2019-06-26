@@ -1,7 +1,19 @@
+// Phones
 footer {
     font-family: 'Source Serif Pro', serif;
     text-align: center;
 
-    margin: 100px;
+    margin: 20px;
     height: auto;
+}
+
+/* Laptop, Desktop ----------- */
+@media (min-width: 1024px) {
+    footer {
+        font-family: 'Source Serif Pro', serif;
+        text-align: center;
+    
+        margin: 100px;
+        height: auto;
+    }
 }

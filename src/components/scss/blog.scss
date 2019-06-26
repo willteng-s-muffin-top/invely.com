@@ -1,0 +1,10 @@
+.blog-content-container {
+    margin: 0px $global-mobile-margin-side;
+}
+
+/* Laptop, Desktop ----------- */
+@media (min-width: 1024px) {
+    .blog-content-container {
+
+    }
+}

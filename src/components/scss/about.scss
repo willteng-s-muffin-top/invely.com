@@ -1,0 +1,10 @@
+.about-container {
+    margin: 0px $global-mobile-margin-side;
+}
+
+/* Laptop, Desktop ----------- */
+@media (min-width: 1024px) {
+    .about-container {
+        // margin: 0px 0px; - Don't need this
+    }
+}

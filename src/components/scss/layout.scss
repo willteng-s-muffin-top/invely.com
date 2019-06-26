@@ -1,15 +1,28 @@
+// Phones
+body {
+    margin: 0px;
+}
+
 div.layout-container {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    grid-template-areas:
-        "nav main"
-        "footer footer";
+    display: flex;
+    flex-direction: column;
+}
 
-        nav {
-            grid-area: nav;
-        }
-
-        footer {
-            grid-area: footer; 
-        }
+/* Laptop, Desktop ----------- */
+@media (min-width: 1024px) {
+    div.layout-container {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        grid-template-areas:
+            "nav main"
+            "footer footer";
+    
+            nav {
+                grid-area: nav;
+            }
+    
+            footer {
+                grid-area: footer; 
+            }
+    }
 }

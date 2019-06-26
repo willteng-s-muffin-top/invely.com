@@ -1,0 +1,11 @@
+// Phone
+.landing-container {
+    margin: 0px 25px;
+}
+
+/* Laptop, Desktop ----------- */
+@media (min-width: 1024px) { 
+    .landing-container {
+        margin: 0px 0px;
+    }
+}

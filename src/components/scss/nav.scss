@@ -1,6 +1,7 @@
+// Phones
 nav.navbar {
     display: flex;
-    // flex-direction: column;
+    flex-direction: column;
     // align-items: flex-end;
     margin-top: $global-margin-top;
     margin-left: $global-margin-left;
@@ -10,14 +11,14 @@ nav.navbar {
     a.logo {
         text-decoration: none;
         color: $black;
+        margin-bottom: 20px;
     }
     
-
     .navbar-menu {
         display: flex;
         flex-direction: column;
         // align-items: flex-end;
-        margin-left: 50px;
+        // margin-left: 50px;
         text-transform: uppercase;
 
         letter-spacing: 1px;
@@ -27,6 +28,46 @@ nav.navbar {
         a.navbar-item {
             text-decoration: none;
             color: $black;
+        }
+    }
+}
+
+/* Laptop, Desktop ----------- */
+@media (min-width: 1024px) {
+    /* Styles */
+    nav.navbar {
+        display: flex;
+        flex-direction: row;
+        // align-items: flex-end;
+        margin-top: $global-margin-top;
+        margin-left: $global-margin-left;
+    
+        font-family: 'Lato', sans-serif;
+    
+        a.logo {
+            text-decoration: none;
+            color: $black;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            width: 40px;
+        }
+        
+    
+        .navbar-menu {
+            display: flex;
+            flex-direction: column;
+            // align-items: flex-end;
+            margin-left: 50px;
+            text-transform: uppercase;
+    
+            letter-spacing: 1px;
+            line-height: 22px;
+            font-size: 12px;
+    
+            a.navbar-item {
+                text-decoration: none;
+                color: $black;
+            }
         }
     }
 }
