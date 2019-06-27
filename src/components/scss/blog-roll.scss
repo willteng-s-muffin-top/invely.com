@@ -2,6 +2,7 @@
 .blog-container {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 
     .blog-item {
         margin: 5px $global-mobile-roll-margin-side;
@@ -29,7 +30,6 @@
         display: flex;
         flex-direction: column;
         
-
         .featured-thumbnail {
             width: 100%;
         }
@@ -45,6 +45,37 @@
     }
 }
 
+/* Tablet ----------- */
+@media (min-width: 600px) {
+    .blog-container {
+        display: flex;
+        flex-direction: row;
+    
+        .blog-item {
+            margin: 5px $global-mobile-roll-margin-side;
+            padding: 10px;
+            text-decoration: none;
+            color: $grey-01;
+            border-radius: 5px;
+
+            width: 300px;
+    
+            -webkit-transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        
+            &:hover{
+                background-color: $light-grey-01;
+            }
+        
+            &::after {
+                -webkit-transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+                transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+            }
+        }
+    }
+}
+
+
 /* Laptop, Desktop ----------- */
 @media (min-width: 1024px) {
     .blog-container {
@@ -57,6 +88,8 @@
             text-decoration: none;
             color: $grey-01;
             border-radius: 5px;
+
+            width: inherit;
     
             -webkit-transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
             transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
