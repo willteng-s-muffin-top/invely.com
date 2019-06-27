@@ -1,5 +1,11 @@
 # Invely.com
-Momo's website
+Momo's website / 모모의 웹사이트 🖥 입니다.
+
+## Development
+<details>
+<summary>
+The site is built with <a href="https://github.com/netlify-templates/gatsby-starter-netlify-cms">Gatsby + Netlify CMS Starter</a>
+</summary>
 
 # Gatsby + Netlify CMS Starter
 
@@ -104,3 +110,5 @@ This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gats
 
 Contributions are always welcome, no matter how large or small. Before contributing,
 please read the [code of conduct](CODE_OF_CONDUCT.md).
+
+</details>
