@@ -5,6 +5,8 @@ module.exports = {
     title: '모모 블로그',
     description:
       '모모의 블로그입니다.',
+    url: "https://yoonjeongin.com",
+    image: "/img/1000000003_detail_025.jpg",
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -66,6 +68,12 @@ module.exports = {
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
+    },
+    {
+      resolve: 'gatsby-plugin-favicon',
+      options: {
+        logo: "./src/img/favicon/favicon.png"
+      }
     },
     {
       resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
