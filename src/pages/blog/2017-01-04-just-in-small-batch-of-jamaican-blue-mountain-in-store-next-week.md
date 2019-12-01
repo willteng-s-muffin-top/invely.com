@@ -8,6 +8,7 @@ description: >-
   아스라히 속의 하나에 있습니다.
 featuredpost: true
 featuredimage: /img/1000000007_detail_014.jpg
+draft: false
 tags:
   - jamaica
   - green beans

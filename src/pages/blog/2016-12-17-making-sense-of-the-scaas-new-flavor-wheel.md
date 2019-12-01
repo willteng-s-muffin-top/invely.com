@@ -9,6 +9,7 @@ description: >-
   차 자랑처럼 거외다. 어머니, 무덤 다하지 이름을 별 이름을 토끼, 있습니다.
 featuredpost: false
 featuredimage: /img/1000000003_detail_025.jpg
+draft: false
 tags:
   - flavor
   - tasting

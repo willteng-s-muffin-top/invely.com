@@ -7,6 +7,7 @@ description: >-
   것은 새겨지는 이름을 이웃 불러 새워 못 이름자 듯합니다.
 featuredpost: false
 featuredimage: /img/1000000006_detail_062.jpg
+draft: false
 tags:
   - brewing
   - chemex

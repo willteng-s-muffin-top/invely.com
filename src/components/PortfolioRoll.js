@@ -29,7 +29,7 @@ class PortfolioRoll extends React.Component {
                           }`,
                         }}
                       />
-                    </div>
+                    </div> 
                   ) : null}
                   
                   <div className="post-meta">
@@ -59,10 +59,7 @@ export default () => (
   <StaticQuery
     query={graphql`
       query PortfolioRollQuery {
-        allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "portfolio-post" } } }
-        ) {
+        allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {templateKey: {eq: "portfolio-post"}, draft: {eq: false}}}) {
           edges {
             node {
               excerpt(pruneLength: 400)
@@ -86,7 +83,7 @@ export default () => (
             }
           }
         }
-      }
+      }    
     `}
     render={(data, count) => <PortfolioRoll data={data} count={count} />}
   />
